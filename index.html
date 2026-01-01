@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA VATER - Redirecting...</title>
+    <script>
+        (function() {
+            var browserLang = (navigator.language || navigator.userLanguage).slice(0, 2).toLowerCase();
+            var supportedLangs = ['lv', 'ru', 'en'];
+            var storedLang = localStorage.getItem('preferredLang');
+
+            var targetLang = storedLang ||
+                (supportedLangs.indexOf(browserLang) !== -1 ? browserLang : 'lv');
+
+            window.location.replace('/' + targetLang + '/');
+        })();
+    </script>
+    <meta http-equiv="refresh" content="0;url=/lv/">
+</head>
+<body>
+    <p>Redirecting to <a href="/lv/">Latvian version</a>...</p>
+</body>
+</html>

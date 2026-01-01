@@ -1,0 +1,9 @@
+# robots.txt for vater.lv
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vater.lv/sitemap.xml
+
+# Disallow admin or private directories (if any)
+Disallow: /assets/js/*.map

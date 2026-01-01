@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 40" width="150" height="40">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c05621"/>
+      <stop offset="100%" style="stop-color:#dd6b20"/>
+    </linearGradient>
+  </defs>
+  <!-- V Icon -->
+  <polygon points="5,8 20,32 35,8 28,8 20,22 12,8" fill="url(#logoGradient)"/>
+  <!-- VATER Text -->
+  <text x="45" y="28" font-family="Montserrat, sans-serif" font-weight="800" font-size="24" fill="#ffffff" letter-spacing="2">VATER</text>
+</svg>

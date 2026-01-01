@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SIA VATER | Get in Touch</title>
+    <meta name="description" content="Contact SIA VATER - our metal processing specialists are ready to help with your project. Email: info@vater.lv">
+
+    <link rel="icon" href="/assets/images/logo/favicon.ico" sizes="any">
+    <link rel="canonical" href="https://vater.lv/en/contact.html">
+    <link rel="alternate" hreflang="lv" href="https://vater.lv/lv/kontakti.html">
+    <link rel="alternate" hreflang="ru" href="https://vater.lv/ru/kontakty.html">
+    <link rel="alternate" hreflang="en" href="https://vater.lv/en/contact.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body class="page">
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="header header--sticky">
+        <div class="container header__container">
+            <a href="/en/" class="header__logo">
+                <img src="/assets/images/logo/logo.svg" alt="VATER" width="150" height="40">
+            </a>
+            <nav class="header__nav" id="main-nav">
+                <ul class="header__nav-list">
+                    <li><a href="/en/" class="header__nav-link">Home</a></li>
+                    <li><a href="/en/services.html" class="header__nav-link">Services</a></li>
+                    <li><a href="/en/gallery.html" class="header__nav-link">Gallery</a></li>
+                    <li><a href="/en/about.html" class="header__nav-link">About</a></li>
+                    <li><a href="/en/contact.html" class="header__nav-link header__nav-link--active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch">
+                <a href="/lv/kontakti.html" class="lang-switch__link" hreflang="lv">LV</a>
+                <a href="/ru/kontakty.html" class="lang-switch__link" hreflang="ru">RU</a>
+                <a href="/en/contact.html" class="lang-switch__link lang-switch__link--active" hreflang="en">EN</a>
+            </div>
+            <button class="header__toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main" class="page__main">
+        <section class="section section--dark" style="padding-top: 140px;">
+            <div class="container">
+                <header class="section__header" data-animate="fade-up">
+                    <span class="section__subtitle">Get in Touch</span>
+                    <h1 class="section__title">Contact Us</h1>
+                    <p class="section__description">We are ready to answer your questions and help with your project.</p>
+                </header>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--2" style="gap: var(--space-16);">
+                    <div data-animate="fade-right">
+                        <h2 style="margin-bottom: var(--space-6);">Send a Message</h2>
+                        <form class="contact-form" action="#" method="POST">
+                            <div class="form__honeypot">
+                                <input type="text" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            <div class="form--inline">
+                                <div class="form__group">
+                                    <label for="name" class="form__label">Name *</label>
+                                    <input type="text" id="name" name="name" class="form__input" required placeholder="Your name">
+                                </div>
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email *</label>
+                                    <input type="email" id="email" name="email" class="form__input" required placeholder="your@email.com">
+                                </div>
+                                <div class="form__group">
+                                    <label for="phone" class="form__label">Phone</label>
+                                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="+371 26 138 249">
+                                </div>
+                                <div class="form__group">
+                                    <label for="service" class="form__label">Service</label>
+                                    <select id="service" name="service" class="form__select">
+                                        <option value="">Select a service</option>
+                                        <option value="laser">Laser Cutting</option>
+                                        <option value="turning">CNC Turning</option>
+                                        <option value="welding">Welding</option>
+                                                                                <option value="constructions">Metal Constructions</option>
+                                        <option value="kitchen">Kitchen Equipment</option>
+                                        <option value="staircases">Staircases</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form__group form__group--full">
+                                    <label for="message" class="form__label">Message *</label>
+                                    <textarea id="message" name="message" class="form__textarea" required placeholder="Describe your project or question..."></textarea>
+                                </div>
+                                <div class="form__group form__group--full">
+                                    <button type="submit" class="btn btn--primary btn--lg btn--full">Send Message</button>
+                                </div>
+                            </div>
+                            <div class="contact-form__success" hidden style="margin-top: var(--space-4); padding: var(--space-4); background: rgba(56, 161, 105, 0.1); border-radius: var(--radius-md); color: var(--color-success);"></div>
+                            <div class="contact-form__error" hidden style="margin-top: var(--space-4); padding: var(--space-4); background: rgba(229, 62, 62, 0.1); border-radius: var(--radius-md); color: var(--color-error);"></div>
+                        </form>
+                    </div>
+
+                    <div data-animate="fade-left" data-animate-delay="2">
+                        <h2 style="margin-bottom: var(--space-6);">Contact Information</h2>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+                            <div style="display: flex; gap: var(--space-4);">
+                                <div style="width: 50px; height: 50px; background: var(--color-accent); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--space-1);">Email</h4>
+                                    <a href="mailto:info@vater.lv" style="color: var(--color-neutral-600);">info@vater.lv</a>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: var(--space-4);">
+                                <div style="width: 50px; height: 50px; background: var(--color-accent); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--space-1);">Phone</h4>
+                                    <div style="display: flex; align-items: center; gap: var(--space-2);">
+                                        <a href="tel:+37126138249" style="color: var(--color-neutral-600);">+371 26 138 249</a>
+                                        <a href="https://wa.me/37126138249" target="_blank" rel="noopener noreferrer" title="WhatsApp" style="display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: #25D366; border-radius: 50%; transition: opacity 0.2s;">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: var(--space-4);">
+                                <div style="width: 50px; height: 50px; background: var(--color-accent); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--space-1);">Addresses</h4>
+                                    <p style="color: var(--color-neutral-600); margin-bottom: var(--space-2);">
+                                        <strong>Office, CNC, mechanical services:</strong><br>
+                                        Tvaika 4.d, Riga, LV-1005
+                                    </p>
+                                    <p style="color: var(--color-neutral-600);">
+                                        <strong>Laser cutting:</strong><br>
+                                        Tvaika 37A, Riga, LV-1034
+                                    </p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: var(--space-4);">
+                                <div style="width: 50px; height: 50px; background: var(--color-accent); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--space-1);">Working Hours</h4>
+                                    <p style="color: var(--color-neutral-600);">Monday - Friday: 9:00 - 17:00<br>Saturday - Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- OpenStreetMap -->
+                        <div id="map" style="margin-top: var(--space-8); height: 300px; border-radius: var(--radius-lg); z-index: 1;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="/assets/images/logo/logo-white.svg" alt="VATER" class="footer__logo">
+                    <p class="footer__description">SIA VATER — professional metal processing services with over 20 years of experience.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Links</h4>
+                    <ul class="footer__list">
+                        <li><a href="/en/" class="footer__link">Home</a></li>
+                        <li><a href="/en/services.html" class="footer__link">Services</a></li>
+                        <li><a href="/en/gallery.html" class="footer__link">Gallery</a></li>
+                        <li><a href="/en/about.html" class="footer__link">About</a></li>
+                        <li><a href="/en/contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="/en/services/laser-cutting.html" class="footer__link">Laser Cutting</a></li>
+                        <li><a href="/en/services/welding.html" class="footer__link">Welding</a></li>
+                        <li><a href="/en/services/metal-constructions.html" class="footer__link">Metal Constructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Contact</h4>
+                    <div class="footer__contact-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:info@vater.lv">info@vater.lv</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 SIA VATER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var map = L.map('map').setView([56.9713, 24.1465], 14);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            var officeIcon = L.divIcon({
+                className: 'custom-marker',
+                html: '<div style="background: #E85A1B; width: 32px; height: 32px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); border: 3px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>',
+                iconSize: [32, 32],
+                iconAnchor: [16, 32],
+                popupAnchor: [0, -32]
+            });
+
+            var laserIcon = L.divIcon({
+                className: 'custom-marker',
+                html: '<div style="background: #1E3A5F; width: 32px; height: 32px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); border: 3px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3);"></div>',
+                iconSize: [32, 32],
+                iconAnchor: [16, 32],
+                popupAnchor: [0, -32]
+            });
+
+            L.marker([56.9677, 24.1547], {icon: officeIcon})
+                .addTo(map)
+                .bindPopup('<strong>Office, CNC, mechanical services</strong><br>Tvaika 4.d, Riga, LV-1005');
+
+            L.marker([56.9750, 24.1380], {icon: laserIcon})
+                .addTo(map)
+                .bindPopup('<strong>Laser cutting</strong><br>Tvaika 37A, Riga, LV-1034');
+        });
+    </script>
+</body>
+</html>

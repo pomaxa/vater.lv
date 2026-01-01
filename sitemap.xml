@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Latvian Pages -->
+  <url>
+    <loc>https://vater.lv/lv/</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi/lazergriesana.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi/lazergriesana.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi/lazernaya-rezka.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services/laser-cutting.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi/virposana.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi/virposana.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi/tokarnye-raboty.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services/cnc-turning.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi/metinasana.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi/metinasana.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi/svarka.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services/welding.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi/loksnu-apstrade.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi/loksnu-apstrade.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi/obrabotka-listov.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services/sheet-metal.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi/metalkonstrukcijas.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi/metalkonstrukcijas.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi/metallokonstrukcii.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services/metal-constructions.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi/virtuves-iekartas.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi/virtuves-iekartas.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi/kuhonnoe-oborudovanie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services/kitchen-equipment.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi/partikas-iekartas.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi/partikas-iekartas.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi/pishchevoe-oborudovanie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services/food-industry.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/pakalpojumi/kapnes.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/pakalpojumi/kapnes.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/uslugi/lestnitsy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/services/staircases.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/galerija.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/galerija.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/galereya.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/gallery.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/par-mums.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/par-mums.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/o-nas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/lv/kontakti.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/kontakti.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/kontakty.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Russian Pages -->
+  <url>
+    <loc>https://vater.lv/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/ru/kontakty.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/kontakti.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/kontakty.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://vater.lv/en/</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://vater.lv/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="lv" href="https://vater.lv/lv/kontakti.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vater.lv/ru/kontakty.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vater.lv/en/contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
