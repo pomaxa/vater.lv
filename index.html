@@ -13,12 +13,12 @@
             var targetLang = storedLang ||
                 (supportedLangs.indexOf(browserLang) !== -1 ? browserLang : 'lv');
 
-            window.location.replace('/' + targetLang + '/');
+            window.location.replace('./' + targetLang + '/');
         })();
     </script>
-    <meta http-equiv="refresh" content="0;url=/lv/">
+    <meta http-equiv="refresh" content="0;url=./lv/">
 </head>
 <body>
-    <p>Redirecting to <a href="/lv/">Latvian version</a>...</p>
+    <p>Redirecting to <a href="./lv/">Latvian version</a>...</p>
 </body>
 </html>
