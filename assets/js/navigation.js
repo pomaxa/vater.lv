@@ -116,18 +116,28 @@ export class Navigation {
 
         this.navLinks.forEach(link => {
             const href = link.getAttribute('href');
+            if (!href) return;
 
             // Remove all active classes first
             link.classList.remove('header__nav-link--active');
 
-            // Check if this link matches current path
-            if (href && currentPath.includes(href.replace('.html', ''))) {
-                link.classList.add('header__nav-link--active');
-            }
+            // Check if this is a homepage link
+            const isHomepageLink = href.match(/^\/(lv|ru|en)\/?$/);
+            const isCurrentHomepage = currentPath.match(/^\/(lv|ru|en)\/?$/);
 
-            // Special case for homepage
-            if (currentPath.match(/^\/(lv|ru|en)\/?$/) && href?.match(/^\/(lv|ru|en)\/?$/)) {
-                link.classList.add('header__nav-link--active');
+            if (isHomepageLink) {
+                // Only mark homepage active if we're actually on homepage
+                if (isCurrentHomepage) {
+                    link.classList.add('header__nav-link--active');
+                }
+            } else {
+                // For other pages, check if current path matches the link
+                const hrefPath = href.replace('.html', '').replace(/\/$/, '');
+                const cleanCurrentPath = currentPath.replace('.html', '').replace(/\/$/, '');
+
+                if (cleanCurrentPath === hrefPath || cleanCurrentPath.startsWith(hrefPath + '/')) {
+                    link.classList.add('header__nav-link--active');
+                }
             }
         });
     }
