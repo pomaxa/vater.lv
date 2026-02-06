@@ -7,6 +7,7 @@ import { Navigation } from './navigation.js';
 import { Gallery } from './gallery.js';
 import { ContactForm } from './contact-form.js';
 import { Animations } from './animations.js';
+import { CookieConsent } from './cookie-consent.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize navigation (always present)
@@ -14,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize animations (always present)
     new Animations();
+
+    // Initialize cookie consent (always present)
+    new CookieConsent();
 
     // Initialize gallery only on gallery pages
     if (document.querySelector('.gallery')) {

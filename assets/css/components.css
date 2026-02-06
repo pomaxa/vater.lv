@@ -922,3 +922,101 @@
 [data-animate-delay="3"] { transition-delay: 300ms; }
 [data-animate-delay="4"] { transition-delay: 400ms; }
 [data-animate-delay="5"] { transition-delay: 500ms; }
+
+/* ===== COOKIE CONSENT BANNER ===== */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-4) var(--space-6);
+    transform: translateY(100%);
+    transition: transform var(--transition-base);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cookie-banner--visible {
+    transform: translateY(0);
+}
+
+.cookie-banner__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+}
+
+.cookie-banner__text {
+    flex: 1;
+    min-width: 280px;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cookie-banner__actions {
+    display: flex;
+    gap: var(--space-3);
+    flex-shrink: 0;
+}
+
+.cookie-banner__btn {
+    padding: var(--space-2) var(--space-5);
+    font-family: var(--font-heading);
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    border: 2px solid transparent;
+}
+
+.cookie-banner__btn--accept {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-color: var(--color-accent);
+}
+
+.cookie-banner__btn--accept:hover {
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+}
+
+.cookie-banner__btn--decline {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-gray-400);
+}
+
+.cookie-banner__btn--decline:hover {
+    border-color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 640px) {
+    .cookie-banner {
+        padding: var(--space-4);
+    }
+
+    .cookie-banner__content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-4);
+    }
+
+    .cookie-banner__text {
+        min-width: 100%;
+    }
+
+    .cookie-banner__actions {
+        width: 100%;
+        justify-content: center;
+    }
+}
