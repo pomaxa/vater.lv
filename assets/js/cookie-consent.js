@@ -39,12 +39,21 @@ export class CookieConsent {
         }
     }
 
+    // localStorage can throw when storage is blocked (privacy modes, some browsers)
     getConsent() {
-        return localStorage.getItem(this.consentKey);
+        try {
+            return localStorage.getItem(this.consentKey);
+        } catch (e) {
+            return null;
+        }
     }
 
     setConsent(value) {
-        localStorage.setItem(this.consentKey, value);
+        try {
+            localStorage.setItem(this.consentKey, value);
+        } catch (e) {
+            // Storage unavailable: consent applies to this page view only
+        }
     }
 
     getLang() {

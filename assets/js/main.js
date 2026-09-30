@@ -9,23 +9,29 @@ import { ContactForm } from './contact-form.js';
 import { Animations } from './animations.js';
 import { CookieConsent } from './cookie-consent.js';
 
+// Initialize each component in isolation so one failure
+// doesn't break the rest of the page
+function safeInit(name, init) {
+    try {
+        init();
+    } catch (error) {
+        console.error(`[VATER] ${name} failed to initialize`, error);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize navigation (always present)
-    new Navigation();
-
-    // Initialize animations (always present)
-    new Animations();
-
-    // Initialize cookie consent (always present)
-    new CookieConsent();
+    // Always present
+    safeInit('Navigation', () => new Navigation());
+    safeInit('Animations', () => new Animations());
+    safeInit('CookieConsent', () => new CookieConsent());
 
     // Initialize gallery only on gallery pages
     if (document.querySelector('.gallery')) {
-        new Gallery();
+        safeInit('Gallery', () => new Gallery());
     }
 
     // Initialize contact form only on contact pages
     if (document.querySelector('.contact-form')) {
-        new ContactForm();
+        safeInit('ContactForm', () => new ContactForm());
     }
 });

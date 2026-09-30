@@ -6,9 +6,10 @@
     <title>SIA VATER - Redirecting...</title>
     <script>
         (function() {
-            var browserLang = (navigator.language || navigator.userLanguage).slice(0, 2).toLowerCase();
+            var browserLang = (navigator.language || navigator.userLanguage || '').slice(0, 2).toLowerCase();
             var supportedLangs = ['lv', 'ru', 'en'];
-            var storedLang = localStorage.getItem('preferredLang');
+            var storedLang = null;
+            try { storedLang = localStorage.getItem('preferredLang'); } catch (e) {}
 
             var targetLang = storedLang ||
                 (supportedLangs.indexOf(browserLang) !== -1 ? browserLang : 'lv');

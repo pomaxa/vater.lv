@@ -21,8 +21,12 @@ export class Animations {
      * Set up intersection observer for scroll animations
      */
     setupScrollAnimations() {
+        // No observer support: leave content visible, skip animations
+        if (!('IntersectionObserver' in window)) return;
+
+        // threshold 0: tall elements on narrow screens may never reach 10% visibility
         const observerOptions = {
-            threshold: 0.1,
+            threshold: 0,
             rootMargin: '0px 0px -50px 0px'
         };
 
@@ -38,6 +42,9 @@ export class Animations {
         this.animatedElements.forEach(el => {
             observer.observe(el);
         });
+
+        // Hide elements only now that we know they can be revealed
+        document.documentElement.classList.add('js-animate');
     }
 
     /**

@@ -888,32 +888,34 @@
 }
 
 /* ===== ANIMATIONS ===== */
+/* Content is hidden only after animations.js confirms it can reveal it
+   (adds .js-animate to <html>). If JS fails, content stays visible. */
 
-[data-animate] {
+.js-animate [data-animate] {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-[data-animate].is-animated {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-[data-animate="fade-up"] {
+.js-animate [data-animate="fade-up"] {
     transform: translateY(30px);
 }
 
-[data-animate="fade-left"] {
+.js-animate [data-animate="fade-left"] {
     transform: translateX(-30px);
 }
 
-[data-animate="fade-right"] {
+.js-animate [data-animate="fade-right"] {
     transform: translateX(30px);
 }
 
-[data-animate="scale"] {
+.js-animate [data-animate="scale"] {
     transform: scale(0.9);
+}
+
+.js-animate [data-animate].is-animated {
+    opacity: 1;
+    transform: none;
 }
 
 /* Stagger animation delays */

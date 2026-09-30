@@ -102,7 +102,11 @@ export class Navigation {
             link.addEventListener('click', () => {
                 const lang = link.getAttribute('hreflang');
                 if (lang) {
-                    localStorage.setItem('preferredLang', lang);
+                    try {
+                        localStorage.setItem('preferredLang', lang);
+                    } catch (e) {
+                        // Storage unavailable: skip saving preference
+                    }
                 }
             });
         });
