@@ -3,11 +3,11 @@
  * Entry point for all site functionality
  */
 
-import { Navigation } from './navigation.js';
-import { Gallery } from './gallery.js';
-import { ContactForm } from './contact-form.js';
-import { Animations } from './animations.js';
-import { CookieConsent } from './cookie-consent.js';
+import { Navigation } from './navigation.js?v=20260930';
+import { Gallery } from './gallery.js?v=20260930';
+import { ContactForm } from './contact-form.js?v=20260930';
+import { Animations } from './animations.js?v=20260930';
+import { CookieConsent } from './cookie-consent.js?v=20260930';
 
 // Initialize each component in isolation so one failure
 // doesn't break the rest of the page

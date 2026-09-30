@@ -3,10 +3,10 @@
    SIA VATER Website
    ========================================================================== */
 
-@import 'reset.css';
-@import 'variables.css';
-@import 'base.css';
-@import 'layout.css';
-@import 'components.css';
-@import 'utilities.css';
-@import 'responsive.css';
+@import 'reset.css?v=20260930';
+@import 'variables.css?v=20260930';
+@import 'base.css?v=20260930';
+@import 'layout.css?v=20260930';
+@import 'components.css?v=20260930';
+@import 'utilities.css?v=20260930';
+@import 'responsive.css?v=20260930';
